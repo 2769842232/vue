@@ -2,7 +2,7 @@
   <div id="app">
     <!-- 顶栏 -->
     <HeroList></HeroList>
-      
+      <div class="row">
     <foot></foot>
     <!-- 路由对应组件显示的位置 -->
     <router-view></router-view>

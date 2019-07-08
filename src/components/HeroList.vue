@@ -1,6 +1,4 @@
 <template>
-  <!-- 只能有一个父元素 -->
-  <!-- <h3>英雄列表</h3> -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
