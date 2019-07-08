@@ -1,0 +1,36 @@
+<template>
+<!-- 只能有一个父元素 -->
+        <!-- <h3>英雄列表</h3> -->
+        	<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button
+						type="button"
+						class="navbar-toggle collapsed"
+						data-toggle="collapse"
+						data-target="#navbar"
+						aria-expanded="false"
+						aria-controls="navbar"
+					>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">CRUD</a>
+				</div>
+			</div>
+		</nav>
+		
+</template>
+
+
+<script>
+export default {
+//js代码
+}
+</script>
+
+<style>
+/* css样式 */
+</style>

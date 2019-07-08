@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <h3>我的项目</h3> -->
+    <HeroList></HeroList>
+    <right></right>
+    <foot></foot>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+//局部组件
+//引入
+import HeroList from './views/HeroList'
+import right from './views/right'
+import foot from './views/foot'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+   //导入注册子组件
+  HeroList,
+  right,
+  foot
   }
 }
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
