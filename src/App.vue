@@ -10,9 +10,9 @@
 <script>
 //局部组件
 //引入
-import HeroList from './views/HeroList'
+import HeroList from './components/HeroList'
 import right from './views/right'
-import foot from './views/foot'
+import foot from './components/foot'
 export default {
   name: 'app',
   components: {
