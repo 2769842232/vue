@@ -4,17 +4,13 @@
 						<li class="active">
 							<a href="#">
 								英雄管理
-								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">用户管理</a>
+							<a href="#">武器管理</a>
 						</li>
 						<li>
-							<a href="#">商品管理</a>
-						</li>
-						<li>
-							<a href="#">订单</a>
+							<a href="#">装备管理</a>
 						</li>
 					</ul>
 				</div>

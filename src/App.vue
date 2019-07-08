@@ -11,7 +11,7 @@
 //局部组件
 //引入
 import HeroList from './components/HeroList'
-import right from './views/right'
+import right from './views/ying/right'
 import foot from './components/foot'
 export default {
   name: 'app',
