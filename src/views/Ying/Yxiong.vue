@@ -2,6 +2,7 @@
   <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <h2 class="sub-header">英雄管理</h2>
     <!-- <a class="btn btn-success" href="add.html">Add</a> -->
+    <!-- 二级路由 -->
     <router-link class="btn btn-success" to="/Ying/PostList">添加</router-link>
     <div class="table-responsive">
       <table class="table table-striped">
@@ -21,7 +22,7 @@
             <td>
               <a href="edit.html">编辑</a>
               &nbsp;&nbsp;
-              <a href="javascript:window.confirm('Are you sure?')">删除</a>
+              <a href="javascript:" @click="shan(value.id)">删除</a>
             </td>
           </tr>
         </tbody>
@@ -54,16 +55,36 @@ export default {
           console.log(res);
           const { status, data } = res;
           if (status === 200) {
-            this.list = data.data.heros
-            console.log(data)
+            this.list = data.data.heros;
+            console.log(data);
           }
-        }).catch((err)=>{
-          alert('请求服务器异常')
         })
+        .catch(err => {
+          alert("请求服务器异常");
+        });
+    },
+    //删除功能
+    shan(id) {
+      if (!confirm("确定要删除吗?")) {
+        return false;
+      }
+      this.axios
+        .delete(
+          `https://www.easy-mock.com/mock/5d0cba0313563a7b47ce871c/itcast_wyz/heros/${id}`
+        )
+        .then(res => {
+          console.log(res);
+          const { status } = res;
+          if (status === 200) {
+            this.Xiong();
+          }else{
+            alert('删除失败')
+          }
+        });
     }
   }
 };
 </script>
-
+ 
 <style>
 </style>

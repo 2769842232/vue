@@ -18,10 +18,11 @@ import PostList from './views/Ying/PostList.vue'
 const router = new VueRouter({
     linkActiveClass: 'active',
     routes: [
-        { name: 'one', path: '/', directives: 'Wqi' },
+        { name: 'one', path: '/', directives: '/Ying' },
         { name: 'Ying', path: '/Ying', component: Yxiong },
         { name: 'wq', path: '/Wu', component: Wqi },
         { name: 'Zb', path: '/equips', component: right },
+        //二级路由
         { name: 'PostList', path: '/Ying/PostList', component: PostList }
     ]
 

@@ -4,12 +4,7 @@
     <form>
       <div class="form-group">
         <label for="txtName">姓名</label>
-        <input
-          type="text"
-          class="form-control"
-          id="txtName"
-          placeholder="姓名"
-        />
+        <input type="text" class="form-control" id="txtName" placeholder="姓名" />
       </div>
       <div class="form-group">
         <label for="sex">性别</label>
