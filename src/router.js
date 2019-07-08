@@ -8,14 +8,21 @@ Vue.use(VueRouter)
 import right from './views/equips/right.vue'
 //引入武器列表的组件
 import Wqi from './views/Wu/Wqi.vue'
+//引入英雄管理
+import Yxiong from './views/Ying/Yxiong.vue'
+
+//引入添加列表
+import PostList from './views/Ying/PostList.vue'
 
 //创建路由对象
 const router = new VueRouter({
     linkActiveClass: 'active',
     routes: [
         { name: 'one', path: '/', directives: 'Wqi' },
+        { name: 'Ying', path: '/Ying', component: Yxiong },
         { name: 'wq', path: '/Wu', component: Wqi },
-        { name: 'Zb', path: '/equips', component: right }
+        { name: 'Zb', path: '/equips', component: right },
+        { name: 'PostList', path: '/Ying/PostList', component: PostList }
     ]
 
 })

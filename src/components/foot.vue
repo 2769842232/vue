@@ -10,7 +10,7 @@
       <li>
         <a href="#">装备管理</a>
       </li>-->
-      <router-link to="/ying" tag="li">
+      <router-link to="/ying" tag="li" v-once v-cloak>
         <a>英雄管理</a>
       </router-link>
       <router-link to="/Wu" tag="li">

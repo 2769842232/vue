@@ -11,8 +11,10 @@ Vue.prototype.axios = axios
 
 //导出路由模块
 import router from './router'
+
+
 new Vue({
     render: h => h(App),
     //配置路由对象
-    router,
+    router
 }).$mount('#app')
